@@ -1,0 +1,65 @@
+@font-face {
+    font-family: JetBrainsMono Regular;
+    src:url(fonts/JetBrainsMono-Regular.ttf);
+}
+
+body{
+    font-family: JetBrainsMono Regular, sans-serif;
+    font-size: 20px;
+}
+
+.word {
+    font-family: JetBrainsMono Regular, sans-serif;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    font-size: 49px;
+
+}
+
+.canvas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.segmentButton {
+             display: inline-block;
+             border-radius: 12px;
+             background-color: #0284c8;
+             border: none;
+             color: #FFFFFF;
+             font-family: JetBrainsMono Regular, sans-serif;
+             text-align: center;
+             font-size: 28px;
+             padding: 20px;
+             width: 686px;
+             transition: all 0.5s;
+             cursor: pointer;
+             margin: 5px;
+             /*float: right;*/
+         }
+
+.segmentButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.segmentButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.segmentButton:hover span {
+    padding-right: 25px;
+}
+
+.segmentButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+

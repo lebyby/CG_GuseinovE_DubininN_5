@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Лабораторная работа по компьютерной графике №5</title>
+</head>
+<body>
+<div><span class="word">Алгоритм выявления видимых граней и ребер для одиночного куба</span></div>
+<br>
+<br>
+
+<div class="canvas">
+    <canvas id="canv" width="2110" height="700">
+    </canvas>
+</div>
+<div class="button">
+    <button type="submit" id="visual" class="segmentButton" onclick="drawVisual(); checkVisual=true; checkDraw=true;">Видимые грани и ребра</button>
+    <button type="submit" id="stealth" class="segmentButton" onclick="drawStealth(); checkDraw=true; checkVisual=false">Невидимые грани и ребра</button>
+    <button type="submit" id="colors" class="segmentButton" onclick="drawColors(); checkDraw=false; checkVisual=false">Окрашивание граней</button>
+</div>
+</body>
+<script src="scripts/cube.js"> </script>
+
+</html>
